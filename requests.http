@@ -1,0 +1,17 @@
+# INDEX
+GET http://localhost3000/cars
+
+###
+# CREATE 
+POST http://localhost3000/cars
+Content-Type: application/json
+
+{
+  "model": "F50",
+  "year": "1995",
+  "manufact": "Ferrari"
+}
+
+###
+# SHOW
+GET http://localhost3000/cars/1

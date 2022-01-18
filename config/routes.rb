@@ -7,4 +7,12 @@ Rails.application.routes.draw do
 
   # index, shows everything in desired model db
   get "/cars" => "cars#index"
+
+  # create. adds a new object to the db
+  post "/cars" => "cars#create"
+
+  #show, display a specific object in the db
+  get "/cars/:id" => "cars#show"
+
+  
 end
